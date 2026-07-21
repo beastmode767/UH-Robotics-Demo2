@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundations of Autonomous Systems | Robotics@UH</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for the icons used in the CMU layout -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Utility & Main Navigation -->
+    <header class="site-header">
+        <div class="utility-nav">
+            <ul class="nav-links">
+                <li><a href="#">Current Students</a></li>
+                <li><a href="#">Faculty & Staff</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Lab Directory</a></li>
+            </ul>
+            <ul class="nav-actions">
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Visit</a></li>
+            </ul>
+        </div>
+        <div class="main-nav">
+            <div class="logo">
+                <a href="#">University of Houston</a>
+                <span class="sub-logo">Robotics@UH</span>
+            </div>
+            <ul class="nav-links main-links">
+                <li><a href="#">Hardware Teams</a></li>
+                <li><a href="#">Software & ROS</a></li>
+                <li><a href="#">Competitions</a></li>
+                <li><a href="#">Lab Safety</a></li>
+                <li><a href="#">Directory</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section (Matches CMU's overlapping text box over an image) -->
+    <section class="hero-section">
+        <div class="hero-image-container">
+            <img src="https://placehold.co/1200x600/111111/444444?text=UH+Robotics+Lab+Environment" alt="Robotics Lab">
+        </div>
+        <div class="hero-content-box">
+            <h1>Foundations of Autonomous Systems & Hardware</h1>
+            <p class="subtitle">Robotics@UH Onboarding Program</p>
+            <hr>
+            <p>Build on the engineering and technical skills you already have to gain the robotics foundation, confidence, and credibility to collaborate across teams, move into hardware-focused roles, and lead technical innovation at the Cullen College of Engineering.</p>
+            <a href="#apply-form" class="cta-button">Request Information</a>
+        </div>
+    </section>
+
+    <!-- Main Content Area (Two Columns) -->
+    <main class="page-content">
+        <div class="content-container">
+            
+            <!-- Left Column: Highlights & Quote -->
+            <div class="left-column">
+                <h2>Robotics@UH Onboarding Program Highlights</h2>
+                
+                <div class="highlight-item">
+                    <div class="icon-wrapper"><i class="fa-solid fa-users"></i></div>
+                    <div class="text-wrapper">
+                        <p><strong>Hands-on, in-person labs –</strong> Meet weekly with engineering leads for interactive sessions focused on real robot behavior, motion control, and hardware integration.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="icon-wrapper"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="text-wrapper">
+                        <p><strong>Advanced engineering projects –</strong> Learn to build robotic systems that are precise, responsive, safe, and effective using STM32 architectures and custom PCBs.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="icon-wrapper"><i class="fa-solid fa-gears"></i></div>
+                    <div class="text-wrapper">
+                        <p><strong>Applied autonomy foundations –</strong> Build an understanding of how systems move, interact, and make decisions through hands-on exploration of ROS2 programming and perception.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="icon-wrapper"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="text-wrapper">
+                        <p><strong>The Cullen College advantage –</strong> Collaborate with top-tier student engineers to prepare for regional competitions and industry showcases.</p>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <h3>Lab Grants & Funding</h3>
+                <p>Submit your project proposal by the <strong>priority deadline</strong> to receive partial funding awards for custom parts and fabrication.</p>
+
+                <hr class="section-divider">
+
+                <!-- Testimonial / Quote Section -->
+                <div class="quote-section">
+                    <img src="https://placehold.co/400x400/eeeeee/999999?text=Engineering+Lead" alt="Engineering Lead Headshot" class="quote-headshot">
+                    <div class="quote-text">
+                        <p>"This program is a pathway for technically trained students to step into robotics and build uniquely valuable skills at the intersection of autonomy and hardware interaction. It’s the foundation needed to build rovers and drones that move reliably and succeed in real-world environments."</p>
+                        <p class="quote-author"><strong>Robotics@UH Leadership</strong><br>Cullen College of Engineering<br>University of Houston</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="right-column" id="apply-form">
+                <div class="form-container">
+                    <h2>Request Information</h2>
+                    <p>Fill out the form below to receive details on lab onboarding and recruitment dates.</p>
+                    <form onsubmit="event.preventDefault(); alert('Application Received!');">
+                        <div class="form-group">
+                            <label>First Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>UH Email *</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Major / Track *</label>
+                            <select required>
+                                <option value="" disabled selected>Please Select...</option>
+                                <option value="ee">Electrical Engineering</option>
+                                <option value="ce">Computer Engineering</option>
+                                <option value="me">Mechanical Engineering</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- At a Glance Section -->
+    <section class="at-a-glance">
+        <div class="glance-container">
+            <h2>Foundations of Autonomous Systems</h2>
+            <p class="glance-subtitle">Program At a Glance</p>
+            
+            <div class="glance-grid">
+                <div class="glance-item">
+                    <i class="fa-regular fa-calendar-check fa-3x"></i>
+                    <h3>Important Dates</h3>
+                    <p><strong>Fall Kickoff:</strong> August 28th, 2026<br>
+                    <strong>Safety Training Due:</strong> September 5th, 2026</p>
+                </div>
+                <div class="glance-item">
+                    <i class="fa-solid fa-stopwatch fa-3x"></i>
+                    <h3>Time Commitment</h3>
+                    <p>Expect 5-8 hours per week dedicated to lab fabrication, CAD design, and weekly stand-up meetings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Robotics@UH. University of Houston. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
